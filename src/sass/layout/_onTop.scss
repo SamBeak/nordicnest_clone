@@ -1,0 +1,45 @@
+#onTop{
+    grid-area: onTop;
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .onTop__center{
+        .onTop__pointer{
+            pointer-events: auto;
+            transform: translateY(-50%);
+            transition: transform 700ms ease 0s, opacity 700ms ease 0s;
+            opacity: 1;
+            &:hover{
+                transform: translateY(0%);
+                transition: transform 700ms ease 0s, opacity 700ms ease 0s;
+                opacity: 1;
+            }
+        }
+    }
+    .onTop__right{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        .onTop__lang{
+            .lang__box{
+                padding: 8px 0;
+                >img{
+                    width: 20px;
+                    height: 20px;
+                }
+                >span{
+                    font-size: 12px;
+                    font-weight: 500;
+                    margin-left: 8px;
+                }
+            }
+        }
+        >i{
+            margin-left: 8px;
+        }
+    }
+}
