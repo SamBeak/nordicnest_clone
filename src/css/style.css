@@ -97,6 +97,10 @@ i {
 #onTop {
   grid-area: onTop;
   width: 100%;
+  background-color: #ebebeb;
+}
+#onTop .onTop__container {
+  width: 100%;
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
@@ -104,35 +108,31 @@ i {
   justify-content: space-between;
   align-items: center;
 }
-#onTop .onTop__center .onTop__pointer {
-  pointer-events: auto;
-  transform: translateY(-50%);
-  transition: transform 700ms ease 0s, opacity 700ms ease 0s;
-  opacity: 1;
+#onTop .onTop__container .onTop__center .onTop__pointer {
+  pointer-events: none;
+  display: none;
 }
-#onTop .onTop__center .onTop__pointer:hover {
-  transform: translateY(0%);
-  transition: transform 700ms ease 0s, opacity 700ms ease 0s;
-  opacity: 1;
+#onTop .onTop__container .onTop__center .onTop__pointer b {
+  font-weight: 800;
 }
-#onTop .onTop__right {
+#onTop .onTop__container .onTop__right {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-#onTop .onTop__right .onTop__lang .lang__box {
+#onTop .onTop__container .onTop__right .onTop__lang .lang__box {
   padding: 8px 0;
 }
-#onTop .onTop__right .onTop__lang .lang__box > img {
+#onTop .onTop__container .onTop__right .onTop__lang .lang__box > img {
   width: 20px;
   height: 20px;
 }
-#onTop .onTop__right .onTop__lang .lang__box > span {
+#onTop .onTop__container .onTop__right .onTop__lang .lang__box > span {
   font-size: 12px;
   font-weight: 500;
   margin-left: 8px;
 }
-#onTop .onTop__right > i {
+#onTop .onTop__container .onTop__right > i {
   margin-left: 8px;
 }
 
