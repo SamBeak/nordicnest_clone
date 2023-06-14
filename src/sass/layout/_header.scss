@@ -1,3 +1,96 @@
 #header{
     grid-area: header;
+    .container{
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+        .left-box{
+            width: 30%;
+            .search__box{
+                width: 230px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 50px;
+                padding-left: 24px;
+                background-color: $bgColor;
+                border-radius: 50px;
+                position: relative;
+                transition: all 0.3s ease-in-out;
+                &.on{
+                    width: 300px;
+                }
+                #searchingInput{
+                    border: 0;
+                    outline: none;
+                    background-color: $bgColor;
+                }
+                >i{
+                    position: absolute;
+                    top: 12px;
+                    right: 20px;
+                    font-size: 24px;
+                }
+            }
+        }
+        .right-box{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .logo__box{
+                margin: 0 auto;
+                width: 114px;
+                height: 48px;
+            }
+            .user__box{
+                display: flex;
+                margin-left: 130px;
+                a{
+                    width: 48px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 24px;
+                        height: 24px;
+                        min-width: auto;
+                        min-height: auto;
+                    }
+                }
+                button{
+                    width: 48px;
+                    height: 48px;
+                    border: 0;
+                    background: url("../../../public/images/header/wishlist.svg") no-repeat 50% 50%;
+                    background-size: 24px 24px;
+                }
+            }
+        }
+    }
+    .nav__container{
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        border-top: 1px solid $bgColor;
+        border-bottom: 1px solid $bgColor;
+        .nav__sort{
+            .sort__list{
+                display: flex;
+                >li{
+                    margin-right: 25px;
+                }
+            }
+        }
+        .nav__brand{
+            .brand__list{
+                display: flex;
+                >li{
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
 }

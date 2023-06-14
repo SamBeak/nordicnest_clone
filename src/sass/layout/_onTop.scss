@@ -3,14 +3,12 @@
     width: 100%;
     background-color: #ebebeb;
     .onTop__container{
-        width: 100%;
-        max-width: 1360px;
-        margin: 0 auto;
-        padding: 0 40px;
+        @include container;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .onTop__center{
+            margin-left: 80px;
             .onTop__pointer{
                 pointer-events: none;
                 display: none;

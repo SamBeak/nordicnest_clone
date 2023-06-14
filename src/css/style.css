@@ -17,7 +17,7 @@ html { /* scroll-behavior: smooth; */
 
 body {
   font: normal 14px/1 "Montserrat", sans-serif;
-  color: #222;
+  color: #212529;
   font-size: 12px;
   line-height: 1.5;
   background: #fff;
@@ -28,7 +28,7 @@ ul {
 }
 
 a {
-  color: #222;
+  color: #212529;
   text-decoration: none;
   font-size: 12px;
   font-weight: 500;
@@ -36,22 +36,22 @@ a {
 
 a:link {
   text-decoration: none;
-  color: #222;
+  color: #212529;
 }
 
 a:hover {
   text-decoration: none;
-  color: #000;
+  color: #212529;
 }
 
 a:visited {
   text-decoration: none;
-  color: #222;
+  color: #212529;
 }
 
 a:focus {
   text-decoration: none;
-  color: #222;
+  color: #212529;
 }
 
 h1, h2, h3, h4, h5, h6, b, strong {
@@ -62,7 +62,7 @@ i, em, address {
   font-style: normal;
 }
 
-i {
+i, button {
   cursor: pointer;
 }
 
@@ -89,6 +89,101 @@ i {
 #header {
   grid-area: header;
 }
+#header .container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+#header .container .left-box {
+  width: 30%;
+}
+#header .container .left-box .search__box {
+  width: 230px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  padding-left: 24px;
+  background-color: #ebebeb;
+  border-radius: 50px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+#header .container .left-box .search__box.on {
+  width: 300px;
+}
+#header .container .left-box .search__box #searchingInput {
+  border: 0;
+  outline: none;
+  background-color: #ebebeb;
+}
+#header .container .left-box .search__box > i {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 24px;
+}
+#header .container .right-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#header .container .right-box .logo__box {
+  margin: 0 auto;
+  width: 114px;
+  height: 48px;
+}
+#header .container .right-box .user__box {
+  display: flex;
+  margin-left: 130px;
+}
+#header .container .right-box .user__box a {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+#header .container .right-box .user__box a img {
+  width: 24px;
+  height: 24px;
+  min-width: auto;
+  min-height: auto;
+}
+#header .container .right-box .user__box button {
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background: url("../../../public/images/header/wishlist.svg") no-repeat 50% 50%;
+  background-size: 24px 24px;
+}
+#header .nav__container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+#header .nav__container .nav__sort .sort__list {
+  display: flex;
+}
+#header .nav__container .nav__sort .sort__list > li {
+  margin-right: 25px;
+}
+#header .nav__container .nav__brand .brand__list {
+  display: flex;
+}
+#header .nav__container .nav__brand .brand__list > li {
+  margin-left: 25px;
+}
 
 #home {
   grid-area: home;
@@ -107,6 +202,9 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#onTop .onTop__container .onTop__center {
+  margin-left: 80px;
 }
 #onTop .onTop__container .onTop__center .onTop__pointer {
   pointer-events: none;

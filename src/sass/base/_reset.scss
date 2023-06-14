@@ -17,7 +17,7 @@
   
   body {
     font: normal 14px/1 'Montserrat', sans-serif;
-    color: #222;
+    color: $fontColor;
     font-size: 12px;
     line-height: 1.5;
     background: #fff;
@@ -28,7 +28,7 @@
   }
   
   a {
-    color: #222;
+    color: $fontColor;
     text-decoration: none;
     font-size: 12px;
     font-weight: 500;
@@ -36,22 +36,22 @@
   
   a:link {
     text-decoration: none;
-    color: #222;
+    color: $fontColor;
   }
   
   a:hover {
     text-decoration: none;
-    color: #000;
+    color: $fontColor;
   }
   
   a:visited {
     text-decoration: none;
-    color: #222;
+    color: $fontColor;
   }
   
   a:focus {
     text-decoration: none;
-    color: #222;
+    color: $fontColor;
   }
   
   h1, h2, h3, h4, h5, h6, b, strong {
@@ -61,7 +61,7 @@
   i, em, address {
     font-style: normal;
   }
-  i{
+  i, button {
     cursor: pointer;
   }
   
