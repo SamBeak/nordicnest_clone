@@ -1,0 +1,51 @@
+#section2{
+    width: 100%;
+    background-color: tomato;
+    >a{
+        .container{
+            width: 100%;
+            .gap{
+                width: 100%;
+                .title{
+                    position: absolute;
+                    top: 44%;
+                    left: 36%;
+                    z-index: 2;
+                    p{
+                        text-align: center;
+                        span{
+                            color: #fff;
+                            font-size: 17px;
+                            font-weight: 600;
+                            &:last-child{
+                                font-size: 70px;
+                            }
+                        }
+                    }
+                    .btn__box{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 30px;
+                        >button{
+                            font-size: 14px;
+                            font-weight: 700;
+                            padding: 10px 12px;
+                            background-color: $subColor;
+                            border: 0;
+                            color: #fff;
+                        }
+                    }
+                }
+                .content{
+                    width: 100%;
+                    position: relative;
+                    z-index: 1;
+                    img{
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
