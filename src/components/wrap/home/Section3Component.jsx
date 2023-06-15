@@ -7,12 +7,12 @@ export default function Section3Component() {
             <div className="gap">
                 <div className="content">
                     <ul className="category__box">
-                        <li><a href="!#">머그컵</a></li>
-                        <li><a href="!#">유리잔</a></li>
-                        <li><a href="!#">접시</a></li>
-                        <li><a href="!#">무선 조명</a></li>
-                        <li><a href="!#">화병 & 화분</a></li>
-                        <li><a href="!#">여름 기획전 <br />자세히 보기</a></li>
+                        <a href="!#"><li><span>머그컵</span></li></a>
+                        <a href="!#"><li><span>유리잔</span></li></a>
+                        <a href="!#"><li><span>접시</span></li></a>
+                        <a href="!#"><li><span>무선 조명</span></li></a>
+                        <a href="!#"><li><span>화병 & 화분</span></li></a>
+                        <a href="!#"><li><span>여름 기획전 <br />자세히 보기</span></li></a>
                     </ul>
                 </div>
             </div>

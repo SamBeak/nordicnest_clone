@@ -1,0 +1,71 @@
+#section4{
+    width: 100%;
+    padding: 40px 0;
+    .container{
+        @include container;
+        .gap{
+            width: 100%;
+            .title{
+                text-align: center;
+                padding-bottom: 40px;
+                p{
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+            .content{
+                width: 100%;
+                .summer-item__category{
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    column-gap: 40px;
+                    >a{
+                        >li{
+                            height: 390px;
+                            text-align: center;
+                            display: flex;
+                            flex-flow: column;
+                            justify-content: flex-end;
+                            padding-bottom: 20px;
+                            span{
+                                color: #fff;
+                                &:first-child{
+                                    display: flex;
+                                    justify-content: center;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                }
+                                &:last-child{
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                        &:first-child{
+                            background: url(../../../public/images/pages/section4/cate_img01.jpg) no-repeat 50% 50%;
+                            background-size: cover;
+                            opacity: 0.8;
+                            align-items: flex-end;
+                        }
+                        &:nth-child(2){
+                            background: url(../../../public/images/pages/section4/cate_img02.jpg) no-repeat 50% 50%;
+                            background-size: cover;
+                            filter: grayscale(0.2);
+                            align-items: flex-end;
+                        }
+                        &:nth-child(3){
+                            background: url(../../../public/images/pages/section4/cate_img03.jpg) no-repeat 50% 50%;
+                            background-size: cover;
+                            align-items: flex-end;
+                        }
+                        &:last-child{
+                            background: url(../../../public/images/pages/section4/cate_img04.jpg) no-repeat 50% 50%;
+                            background-size: cover;
+                            align-items: flex-end;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

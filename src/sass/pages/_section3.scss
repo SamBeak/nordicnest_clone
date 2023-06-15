@@ -11,63 +11,78 @@
                     display: grid;
                     grid-template-columns: repeat(6, 1fr);
                     column-gap: 40px;
-                    >li{
-                        height: 200px;
+                    a{
                         display: flex;
+                        >li{
+                            height: 200px;
+                            display: flex;
+                            span{
+                                font-size: 17px;
+                                font-weight: 800;
+                                color: #fff;
+                            }
+                        }
                         &:first-child{
                             background: url(../../../public/images/pages/section3/cate_img01.jpg) no-repeat 50% 50%;
                             background-size: cover;
-                            align-items: flex-end;
-                            a{
-                                padding-left: 20px;
-                                padding-bottom: 20px;
+                            li{
+                                align-items: flex-end;
+                                span{
+                                    padding-left: 20px;
+                                    padding-bottom: 20px;
+                                }
                             }
                         }
                         &:nth-child(2){
                             background: url(../../../public/images/pages/section3/cate_img02.jpg) no-repeat 50% 50%;
                             background-size: cover;
-                            align-items: flex-end;
-                            a{
-                                padding-left: 20px;
-                                padding-bottom: 20px;
+                            li{
+                                align-items: flex-end;
+                                span{
+                                    padding-left: 20px;
+                                    padding-bottom: 20px;
+                                }
                             }
                         }
                         &:nth-child(3){
                             background: url(../../../public/images/pages/section3/cate_img03.jpg) no-repeat 50% 50%;
                             background-size: cover;
-                            align-items: flex-end;
-                            a{
-                                padding-left: 20px;
-                                padding-bottom: 20px;
+                            li{
+                                align-items: flex-end;
+                                span{
+                                    padding-left: 20px;
+                                    padding-bottom: 20px;
+                                }
                             }
                         }
                         &:nth-child(4){
                             background: url(../../../public/images/pages/section3/cate_img04.jpg) no-repeat 50% 50%;
                             background-size: cover;
-                            align-items: flex-end;
-                            a{
-                                padding-left: 20px;
-                                padding-bottom: 20px;
+                            li{
+                                align-items: flex-end;
+                                span{
+                                    padding-left: 20px;
+                                    padding-bottom: 20px;
+                                }
                             }
                         }
                         &:nth-child(5){
                             background: url(../../../public/images/pages/section3/cate_img05.jpg) no-repeat 50% 50%;
                             background-size: cover;
-                            align-items: flex-end;
-                            a{
-                                padding-left: 20px;
-                                padding-bottom: 20px;
+                            li{
+                                align-items: flex-end;
+                                span{
+                                    padding-left: 20px;
+                                    padding-bottom: 20px;
+                                }
                             }
                         }
                         &:last-child{
                             background-color: $subColor;
                             justify-content: center;
-                            align-items: center;
-                        }
-                        a{
-                            font-size: 17px;
-                            font-weight: 800;
-                            color: #fff;
+                            li{
+                                align-items: center;
+                            }
                         }
                     }
                 }
