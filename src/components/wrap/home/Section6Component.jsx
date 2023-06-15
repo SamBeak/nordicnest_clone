@@ -59,6 +59,15 @@ export default function Section6Component() {
         console.log(cnt);
     }
 
+    // 판매가 콤마
+    const commaPrice=(price)=>{
+        let value = price.toString();
+        const regExp = /(^\d+)(\d{3})/g;
+        while( regExp.test(value) ){
+            return  value.replace(regExp, '$1,$2');
+        }        
+    }
+
   return (
     <section id="section6">
         <div className="container">
@@ -79,7 +88,7 @@ export default function Section6Component() {
                                             <a href="!#">
                                                 <img src={item.imgSrc} alt={item.brand} />
                                                 <div className='item-brand__box'>{item.brand} <br /><span>{item.product}</span></div>
-                                                <div className='item-price__box'><span>￦{item.salePrice}</span><span>￦{item.price}</span></div>
+                                                <div className='item-price__box'><span>￦{commaPrice(item.salePrice)}</span><span>￦{commaPrice(item.price)}</span></div>
                                             </a>
                                         </div>
                                         <div className='item-nums__box'>
