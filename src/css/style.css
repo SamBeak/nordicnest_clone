@@ -234,6 +234,11 @@ i, button {
   margin-left: 8px;
 }
 
+#section1 {
+  background-color: #ff9800;
+  height: 24px;
+}
+
 #join {
   background-color: gold;
 }
