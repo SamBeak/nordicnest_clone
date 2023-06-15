@@ -234,11 +234,6 @@ i, button {
   margin-left: 8px;
 }
 
-#section1 {
-  background-color: #ff9800;
-  height: 24px;
-}
-
 #join {
   background-color: gold;
 }
@@ -250,5 +245,155 @@ i, button {
   background-color: coral;
 }
 #login p {
+  color: #fff;
+}
+
+#section1 {
+  background-color: #ff9800;
+  padding: 4px 0;
+}
+#section1 .container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+  padding-top: 2px;
+}
+#section1 .container > a {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #fff;
+}
+#section1 .container > a i {
+  padding-left: 15px;
+}
+
+#section2 {
+  width: 100%;
+}
+#section2 > a .container {
+  width: 100%;
+}
+#section2 > a .container .gap {
+  width: 100%;
+}
+#section2 > a .container .gap .title {
+  position: absolute;
+  top: 44%;
+  left: 36%;
+  z-index: 2;
+}
+#section2 > a .container .gap .title p {
+  text-align: center;
+}
+#section2 > a .container .gap .title p span {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+}
+#section2 > a .container .gap .title p span:last-child {
+  font-size: 70px;
+}
+#section2 > a .container .gap .title .btn__box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+#section2 > a .container .gap .title .btn__box > button {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 12px;
+  background-color: #ff9800;
+  border: 0;
+  color: #fff;
+}
+#section2 > a .container .gap .content {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+#section2 > a .container .gap .content img {
+  width: auto;
+}
+
+#section3 {
+  width: 100%;
+  padding: 40px 0;
+}
+#section3 .container {
+  width: 100%;
+}
+#section3 .container .gap {
+  width: 100%;
+}
+#section3 .container .gap .content {
+  width: 100%;
+}
+#section3 .container .gap .content .category__box {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+#section3 .container .gap .content .category__box > li {
+  height: 200px;
+  display: flex;
+}
+#section3 .container .gap .content .category__box > li:first-child {
+  background: url(../../../public/images/pages/section3/cate_img01.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  align-items: flex-end;
+}
+#section3 .container .gap .content .category__box > li:first-child a {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+#section3 .container .gap .content .category__box > li:nth-child(2) {
+  background: url(../../../public/images/pages/section3/cate_img02.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  align-items: flex-end;
+}
+#section3 .container .gap .content .category__box > li:nth-child(2) a {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+#section3 .container .gap .content .category__box > li:nth-child(3) {
+  background: url(../../../public/images/pages/section3/cate_img03.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  align-items: flex-end;
+}
+#section3 .container .gap .content .category__box > li:nth-child(3) a {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+#section3 .container .gap .content .category__box > li:nth-child(4) {
+  background: url(../../../public/images/pages/section3/cate_img04.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  align-items: flex-end;
+}
+#section3 .container .gap .content .category__box > li:nth-child(4) a {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+#section3 .container .gap .content .category__box > li:nth-child(5) {
+  background: url(../../../public/images/pages/section3/cate_img05.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  align-items: flex-end;
+}
+#section3 .container .gap .content .category__box > li:nth-child(5) a {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+#section3 .container .gap .content .category__box > li:last-child {
+  background-color: #ff9800;
+  justify-content: center;
+  align-items: center;
+}
+#section3 .container .gap .content .category__box > li a {
+  font-size: 17px;
+  font-weight: 800;
   color: #fff;
 }
