@@ -1,0 +1,12 @@
+{
+    "itemList": [
+        {"brand": "Gense | 겐세",       "product": "포커스디럭스 커트러리 12 pcs, stainless steel",             "salePrice": "168500", "price": "306500", "likes": "79", "nums": "64", "imgSrc": "./images/pages/section6/item_img01.jpg"},
+        {"brand": "Gense | 겐세",       "product": "포커스디럭스 젓가락 2세트 + 받침 2개, stainless steel",     "salePrice": "79900", "price": "130500", "likes": "68", "nums": "88", "imgSrc": "./images/pages/section6/item_img02.jpg"},
+        {"brand": "Aida | 아이다",      "product": "로 테이블매트 41 x 33.5 cm, Spring sand",                   "salePrice": "7900", "price" : "10400", "likes": "85", "nums": "92", "imgSrc": "./images/pages/section6/item_img03.jpeg"},
+        {"brand": "STAUB | 스타우브",   "product": "뉴 화이트 트러플 오벌 접시, 25 cm",                         "salePrice": "25700", "price" : "34300", "likes": "55", "nums": "65", "imgSrc": "./images/pages/section6/item_img04.jpg"},
+        {"brand": "Iittala | 이딸라",   "product": "카스테헬미 사이드 접시 Ø17 cm, clear",                      "salePrice": "19800", "price" : "31500", "likes": "95", "nums": "53", "imgSrc": "./images/pages/section6/item_img05.jpg"},
+        {"brand": "Iittala | 이딸라",   "product": "띠마 접시 21 cm, honey (yellow)",                           "salePrice": "19900", "price" : "30200", "likes": "45", "nums": "63", "imgSrc": "./images/pages/section6/item_img06.webp"},
+        {"brand": "Kähler | 케흘러",    "product": "우르슐라 오벌 접시 13x18 cm, dark green",                   "salePrice": "21000", "price" : "27400", "likes": "75", "nums": "22", "imgSrc": "./images/pages/section6/item_img07.jpg"},
+        {"brand": "Aida | 아이다",      "product": "로 테이블매트 41 x 33.5 cm, Lollypop yellow",               "salePrice": "7900", "price" : "9500", "likes": "94", "nums": "151", "imgSrc": "./images/pages/section6/item_img08.webp"}
+    ]
+}
