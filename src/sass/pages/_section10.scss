@@ -1,17 +1,29 @@
-#section6{
-    width: 100%;
-    padding: $sectionPadding;
+#section10{
     .container{
         @include container;
         .gap{
             width: 100%;
             .title{
                 width: 100%;
+                display: flex;
+                justify-content: space-between;
                 text-align: center;
                 padding-bottom: 30px;
                 p{
                     font-size: 20px;
                     font-weight: 500;
+                    padding-left: 100px;
+                }
+                .item-more__box{
+                    display: flex;
+                    justify-content: flex-end;
+                    >a{
+                        font-size: 14px;
+                        font-weight: 400;
+                        >i{
+                            padding-left: 20px;
+                        }
+                    }
                 }
             }
             .content{
@@ -107,17 +119,6 @@
                         background-size: cover;
                         &.on{
                             background-image: url(../../../public/images/pages/section6/radio_btn_fill.svg);
-                        }
-                    }
-                }
-                .item-more__box{
-                    display: flex;
-                    justify-content: flex-end;
-                    >a{
-                        font-size: 14px;
-                        font-weight: 400;
-                        >i{
-                            padding-left: 20px;
                         }
                     }
                 }

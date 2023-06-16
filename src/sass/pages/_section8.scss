@@ -22,9 +22,9 @@
                     grid-template-columns: repeat(4, 1fr);
                     column-gap: 45px;
                     display: flex;
-                    border-bottom: 1px solid $bgColor;
                     .item__box{
                         width: 100%;
+                        border-bottom: 1px solid $bgColor;
                         .item-sale__box{
                             width: 100%;
                             text-align: end;
@@ -78,11 +78,11 @@
                             display: flex;
                             justify-content: flex-end;
                             align-items: center;
-                            background-color: #fff;
                             .item-icon{
                                 padding: 15px;
                                 border: 0;
                                 @include easing3;
+                                background-color: #fff;
                                 &:last-child:hover{
                                     background-color: $greenColor;
                                 }
@@ -107,17 +107,6 @@
                         background-size: cover;
                         &.on{
                             background-image: url(../../../public/images/pages/section6/radio_btn_fill.svg);
-                        }
-                    }
-                }
-                .item-more__box{
-                    display: flex;
-                    justify-content: flex-end;
-                    >a{
-                        font-size: 14px;
-                        font-weight: 400;
-                        >i{
-                            padding-left: 20px;
                         }
                     }
                 }

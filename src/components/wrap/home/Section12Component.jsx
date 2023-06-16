@@ -1,11 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 
-export default function Section8Component() {
-
+export default function Section12Component() {
     const itemContainer = React.useRef();
     const [cnt, setCnt] = React.useState(0);
-    const [isBtn, setIsBtn] = React.useState(false);
+    const [num, setNum] = React.useState(0);
 
     const [ state, setState ] = React.useState({
         itemList: [],
@@ -14,7 +13,7 @@ export default function Section8Component() {
 
     React.useEffect(() => {
         axios({
-            url: './data/home/section8/section8.json',
+            url: './data/home/section10/section10.json',
             method: 'GET'
         })
         .then((res) => {
@@ -45,27 +44,41 @@ export default function Section8Component() {
         }
 
         if(cnt === 0){
-            setIsBtn(false);
+            setNum(0);
         }
         else if(cnt === 1){
-            setIsBtn(true);
+            setNum(1);
+        }
+        else if(cnt === 2){
+            setNum(2);
         }
 
     }, [cnt, state.n]);
-
+    
     // 슬라이드 이동 버튼
-    const onClickNext=(e)=>{
+    const onClickCnt1=(e)=>{
+        e.preventDefault();
+        setCnt(cnt-1);
+        console.log(cnt);
+    }
+    // 슬라이드 이동 버튼
+    const onClickCnt2=(e)=>{
+        e.preventDefault();
+        if(cnt > 1){
+            setCnt(cnt-1);
+        }
+        else{
+            setCnt(cnt+1);
+        }
+        console.log(cnt);
+    }
+    // 슬라이드 이동 버튼
+    const onClickCnt3=(e)=>{
         e.preventDefault();
         setCnt(cnt+1);
         console.log(cnt);
     }
 
-    // 슬라이드 이동 버튼
-    const onClickPrev=(e)=>{
-        e.preventDefault();
-        setCnt(cnt-1);
-        console.log(cnt);
-    }
 
     // 판매가 콤마
     const commaPrice=(price)=>{
@@ -75,13 +88,12 @@ export default function Section8Component() {
             return  value.replace(regExp, '$1,$2');
         }        
     }
-
   return (
-    <section id="section8">
+    <section id="section12">
         <div className="container">
             <div className="gap">
                 <div className="title">
-                    <p>북유럽 감성조명 특가 모음</p>
+                    <p>인기 제품들이 재입고 되었어요!</p>
                 </div>
                 <div className="content">
                     <ul ref={itemContainer} className="item__container">
@@ -113,8 +125,9 @@ export default function Section8Component() {
                         }
                     </ul>
                     <div className="item-slide__dot">
-                        <button type='button' className={isBtn ? 'item-slide__btn' : 'item-slide__btn on'} onClick={onClickPrev}></button>
-                        <button type='button' className={isBtn ? 'item-slide__btn on' :'item-slide__btn'} onClick={onClickNext}></button>
+                        <button type='button' className={num === 0 ? 'item-slide__btn on' : 'item-slide__btn'} onClick={onClickCnt1}></button>
+                        <button type='button' className={num === 1 ? 'item-slide__btn on' : 'item-slide__btn'} onClick={onClickCnt2}></button>
+                        <button type='button' className={num === 2 ? 'item-slide__btn on' : 'item-slide__btn'} onClick={onClickCnt3}></button>
                     </div>
                 </div>
             </div>

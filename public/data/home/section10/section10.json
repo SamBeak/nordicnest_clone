@@ -1,0 +1,16 @@
+{
+    "itemList": [
+        {"brand": "Byon | 바이온",       "product": "크럼플 팟, white",             "salePrice": "107200", "price": "137400", "likes": "79", "nums": "64", "imgSrc": "./images/pages/section10/item_img01.webp"},
+        {"brand": "Herstal | 허스탈",       "product": "비엔다 플로어 조명, Black-opal glass",     "salePrice": "106900", "price": "115900", "likes": "68", "nums": "88", "imgSrc": "./images/pages/section10/item_img02.webp"},
+        {"brand": "&Tradition | 앤트레디션",      "product": "코모 무선 테이블 조명 SC53, bronzed brass",                   "salePrice": "229900", "price" : "294300", "likes": "85", "nums": "92", "imgSrc": "./images/pages/section10/item_img03.jpg"},
+        {"brand": "Cooee Design | 쿠이디자인",   "product": "트럼펫 화병 16 cm, Shell",                         "salePrice": "449500", "price" : "55000", "likes": "55", "nums": "65", "imgSrc": "./images/pages/section10/item_img04.jpg"},
+        {"brand": "MUUBS | 뭅스",   "product": "밸리 트레이, Nature",                      "salePrice": "20000", "price" : "26000", "likes": "95", "nums": "53", "imgSrc": "./images/pages/section10/item_img05.webp"},
+        {"brand": "Arabia | 아라비아핀란드",   "product": "마이니오 사라스투스 접시 Ø19 cm, Black-white",                           "salePrice": "21100", "price" : "27400", "likes": "45", "nums": "63", "imgSrc": "./images/pages/section10/item_img06.jpg"},
+        {"brand": "Belid | 벨리드",    "product": "피카소 펜던트 조명 Ø38 cm, Matt white",                   "salePrice": "319000", "price" : "442700", "likes": "75", "nums": "22", "imgSrc": "./images/pages/section10/item_img07.jpeg"},
+        {"brand": "Boel & Jan | 보엘앤얀",      "product": "라마스 쿠션 커버 50x50 cm, turquoise",               "salePrice": "29600", "price" : "37000", "likes": "94", "nums": "151", "imgSrc": "./images/pages/section10/item_img08.jpg"},
+        {"brand": "Spiegelau | 스피겔라우",   "product": "라이프스타일 레드 와인잔 4개 세트, 63 cl",                      "salePrice": "57700", "price" : "102400", "likes": "95", "nums": "53", "imgSrc": "./images/pages/section10/item_img09.jpeg"},
+        {"brand": "Orrefors | 오레포스",   "product": "인터메조 마티니잔, 25 cl",                           "salePrice": "86600", "price" : "109900", "likes": "45", "nums": "63", "imgSrc": "./images/pages/section10/item_img10.jpg"},
+        {"brand": "Åry Home | 오리 홈",    "product": "재패니즈 랜드스케이프 코스터 6개 세트, Ocean",                   "salePrice": "26800", "price" : "35700", "likes": "75", "nums": "22", "imgSrc": "./images/pages/section10/item_img11.jpg"},
+        {"brand": "Orrefors | 오레포스",      "product": "Carat 칵테일잔 2개 세트, Clear",               "salePrice": "69600", "price" : "96200", "likes": "94", "nums": "151", "imgSrc": "./images/pages/section10/item_img12.webp"}
+    ]
+}

@@ -1,0 +1,67 @@
+#section11{
+    width: 100%;
+    padding: $sectionPadding;
+    .container{
+        @include container;
+        .content{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 40px;
+            .post__box{
+                width: 100%;
+                position: relative;
+                .post-inner__img{
+                    width: 100%;
+                    >img{
+                        width: 100%;
+                    }
+                }
+                .post-inner__text{
+                    .inner-text__text{
+                        position:absolute;
+                        z-index: 2;
+                        top: 30%;
+                        left: 30%;
+                        text-align: center;
+                        span{
+                            color: #fff;
+                            font-size: 18px;
+                            font-weight: 600;
+                            &:last-child{
+                                font-size: 42px;
+                            }
+                        }
+                    }
+                    .btn__box{
+                        position: absolute;
+                        top: 65%;
+                        left: 5%;
+                        z-index: 2;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 30px;
+                        >button{
+                            font-size: 14px;
+                            font-weight: 700;
+                            padding: 10px 12px;
+                            background-color: $subColor;
+                            border: 0;
+                            color: #fff;
+                            @include linear3;
+                            &:hover{
+                                background-color: #ffc166;
+                            }
+                        }
+                    }
+                }
+                &:last-child{
+                    .inner-text__text{
+                        left: 20%;
+                    }
+                }
+            }
+        }
+    }
+}
