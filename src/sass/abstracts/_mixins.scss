@@ -4,3 +4,9 @@
     margin: 0 auto;
     padding: 0 40px;
 }
+@mixin easing3{
+    transition: all 0.3s ease-in-out;
+}
+@mixin linear3{
+    transition: all 0.3s linear;
+}

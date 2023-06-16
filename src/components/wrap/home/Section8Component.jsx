@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import axios from 'axios';
 
-export default function Section6Component() {
+export default function Section8Component() {
 
     const itemContainer = React.useRef();
     const [cnt, setCnt] = React.useState(0);
@@ -14,7 +14,7 @@ export default function Section6Component() {
 
     React.useEffect(() => {
         axios({
-            url: './data/home/section6/section6.json',
+            url: './data/home/section8/section8.json',
             method: 'GET'
         })
         .then((res) => {
@@ -77,11 +77,11 @@ export default function Section6Component() {
     }
 
   return (
-    <section id="section6">
+    <section id="section8">
         <div className="container">
             <div className="gap">
                 <div className="title">
-                    <p>여름 테이블웨어 BEST</p>
+                    <p>북유럽 감성조명 특가 모음</p>
                 </div>
                 <div className="content">
                     <ul ref={itemContainer} className="item__container">

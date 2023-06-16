@@ -1,0 +1,12 @@
+{
+    "itemList": [
+        {"brand": "Scandi Living | 스칸디리빙",       "product": "페어 테이블 조명 34.5 cm, Frosted white-box",             "salePrice": "129900", "price": "199900", "likes": "79", "nums": "64", "imgSrc": "./images/pages/section8/light_img01.jpeg"},
+        {"brand": "Scandi Living | 스칸디리빙",       "product": "페어 펜던트 조명 Ø30 cm, Frosted white-box",     "salePrice": "112900", "price": "174900", "likes": "68", "nums": "88", "imgSrc": "./images/pages/section8/light_img02.jpeg"},
+        {"brand": "Scandi Living | 스칸디리빙",      "product": "로 테이블매트 41 x 33.5 cm, Spring sand",                   "salePrice": "189900", "price" : "312400", "likes": "85", "nums": "92", "imgSrc": "./images/pages/section8/light_img03.jpeg"},
+        {"brand": "Scandi Living | 스칸디리빙",   "product": "솔라 천장 조명 black 73 cm, Frosted white",                         "salePrice": "189900", "price" : "312400", "likes": "55", "nums": "65", "imgSrc": "./images/pages/section8/light_img04.jpeg"},
+        {"brand": "Scandi Living | 스칸디리빙",   "product": "라이징 테이블 조명 35.5 cm, Sand",                      "salePrice": "107400", "price" : "121900", "likes": "95", "nums": "53", "imgSrc": "./images/pages/section8/light_img05.jpeg"},
+        {"brand": "Scandi Living | 스칸디리빙",   "product": "헤이즈 테이블 조명 32 cm, grey ",                           "salePrice": "107400", "price" : "121900", "likes": "45", "nums": "63", "imgSrc": "./images/pages/section8/light_img06.jpeg"},
+        {"brand": "Scandi Living | 스칸디리빙",    "product": "라이징 테이블 조명 35.5 cm, Black ",                   "salePrice": "107400", "price" : "121900", "likes": "75", "nums": "22", "imgSrc": "./images/pages/section8/light_img07.jpeg"},
+        {"brand": "Scandi Living | 스칸디리빙",      "product": "파인 강림절 캔들스틱 62 cm, white washed",               "salePrice": "119900", "price" : "149900", "likes": "94", "nums": "151", "imgSrc": "./images/pages/section8/light_img08.jpeg"}
+    ]
+}

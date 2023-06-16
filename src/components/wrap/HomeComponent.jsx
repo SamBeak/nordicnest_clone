@@ -5,6 +5,8 @@ import Section3Component from './home/Section3Component'
 import Section4Component from './home/Section4Component'
 import Section5Component from './home/Section5Component'
 import Section6Component from './home/Section6Component'
+import Section7Component from './home/Section7Component'
+import Section8Component from './home/Section8Component'
 
 export default function HomeComponent() {
   return (
@@ -15,6 +17,8 @@ export default function HomeComponent() {
       <Section4Component />
       <Section5Component />
       <Section6Component />
+      <Section7Component />
+      <Section8Component />
     </div>
   )
 }

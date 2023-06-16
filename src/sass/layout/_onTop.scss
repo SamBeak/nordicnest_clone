@@ -1,7 +1,7 @@
 #onTop{
     grid-area: onTop;
     width: 100%;
-    background-color: #ebebeb;
+    background-color: $bgColor;
     .onTop__container{
         @include container;
         display: flex;
