@@ -1,5 +1,9 @@
 #header{
     grid-area: header;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 99;
     .container{
         @include container;
         display: flex;
