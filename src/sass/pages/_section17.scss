@@ -1,0 +1,135 @@
+#section17{
+    padding: $sectionPadding;
+    .container{
+        @include container;
+        .gap{
+            width: 100%;
+            .title{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                padding-bottom: 30px;
+                p{
+                    font-size: 20px;
+                    font-weight: 500;
+                    padding-left: 100px;
+                }
+                .item-more__box{
+                    display: flex;
+                    justify-content: flex-end;
+                    >a{
+                        font-size: 14px;
+                        font-weight: 400;
+                        >i{
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+            .content{
+                overflow: hidden;
+                .item__container{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    column-gap: 45px;
+                    display: flex;
+                    .item__box{
+                        width: 100%;
+                        border-bottom: 1px solid $bgColor;
+                        .item-sale__box{
+                            width: 100%;
+                            text-align: end;
+                            >span{
+                                background-color: $redColor;
+                                color: #fff;
+                                font-size: 11px;
+                                font-weight: 600;
+                                padding: 4px 5px;
+                                &.on{
+                                    background-color: #000;
+                                }
+                            }
+                        }
+                        .item-img__box{
+                            width: 100%;
+                            padding-top: 5px;
+                            a{
+                                img{
+                                    width: 278px;
+                                    height: 278px;
+                                }
+                                .item-brand__box{
+                                    color: $brandColor;
+                                    span{
+                                        color: $fontColor;
+                                    }
+                                }
+                                .item-price__box{
+                                    color: $redColor;
+                                    span{
+                                        color: $redColor;
+                                        &.on{
+                                            color: #000;
+                                        }
+                                        &:last-child{
+                                            padding-left: 8px;
+                                            color: $brandColor;
+                                            text-decoration: line-through;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .item-nums__box{
+                            padding-top: 10px;
+                            >i{
+                                color: #4ec791;
+                            }
+                            >span{
+                                padding-left: 5px;
+                                font-size: 10px;
+                                color: $brandColor;
+                            }
+                        }
+                        .item-icon__box{
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            .item-icon{
+                                padding: 15px;
+                                border: 0;
+                                background-color: #fff;
+                                @include easing3;
+                                &:last-child:hover{
+                                    background-color: $greenColor;
+                                }
+                                img{
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .item-slide__dot{
+                    display: flex;
+                    justify-content: center;
+                    padding: 30px 0;
+                    .item-slide__btn{
+                        width: 18px;
+                        height: 18px;
+                        border: 0;
+                        margin: 0 10px;
+                        background: url(../../../public/images/pages/section6/radio_btn_no_fill.svg) no-repeat 50% 50%;
+                        background-size: cover;
+                        &.on{
+                            background-image: url(../../../public/images/pages/section6/radio_btn_fill.svg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

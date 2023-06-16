@@ -1,0 +1,16 @@
+{
+    "itemList": [
+        {"brand": "Scandi Living | 스칸디리빙",       "product": "Day to Day 드링킹 잔 37 cl, Clear",     "state" :"NEW",        "salePrice": "", "price": "6800", "likes": "79", "nums": "64", "imgSrc": "./images/pages/section10/item_img01.webp"},
+        {"brand": "Bloomingville | 블루밍빌",       "product": "Otto 벽 캐비넷 Ø45x15 cm, Rotting",   "state" :"NEW",  "salePrice": "", "price": "288700", "likes": "68", "nums": "88", "imgSrc": "./images/pages/section10/item_img02.webp"},
+        {"brand": "Spring Copenhagen | 스프링 코펜하겐",      "product": "이클립스 무선 테이블 조명 24 cm, Sand",       "state" :"NEW",            "salePrice": "", "price" : "213000", "likes": "85", "nums": "92", "imgSrc": "./images/pages/section10/item_img03.jpg"},
+        {"brand": "&Tradition | 앤트레디션",   "product": "세타고 JH27 테이블 조명, Maroon-grape",             "state" :"SALE",            "salePrice": "169900", "price" : "196000", "likes": "55", "nums": "65", "imgSrc": "./images/pages/section10/item_img04.jpg"},
+        {"brand": "Spring Copenhagen | 스프링 코펜하겐",   "product": "Eva Stoer Nielsen 화병 14 cm, White",           "state" :"NEW",           "salePrice": "", "price" : "54900", "likes": "95", "nums": "53", "imgSrc": "./images/pages/section10/item_img05.webp"},
+        {"brand": "Spring Copenhagen | 스프링 코펜하겐",   "product": "이클립스 무선 테이블 조명 24 cm, Pale yellow",           "state" :"NEW",                "salePrice": "", "price" : "213000", "likes": "45", "nums": "63", "imgSrc": "./images/pages/section10/item_img06.jpg"},
+        {"brand": "Iittala | 이딸라",    "product": "띠마 머그 30 cl, Rose",       "state" :"NEW",            "salePrice": "", "price" : "27400", "likes": "75", "nums": "22", "imgSrc": "./images/pages/section10/item_img07.jpeg"},
+        {"brand": "Broste Copenhagen | 브로스테코펜하겐",      "product": "Franca 베개커버 50x50 cm, Harvest gold",      "state" :"NEW",         "salePrice": "", "price" : "50800", "likes": "94", "nums": "151", "imgSrc": "./images/pages/section10/item_img08.jpg"},
+        {"brand": "Globen Lighting | 글로벤라이팅",   "product": "Cobbler 벽 조명 150 cm, Smoke",         "state" :"SALE",             "salePrice": "297000", "price" : "307400", "likes": "95", "nums": "53", "imgSrc": "./images/pages/section10/item_img09.jpeg"},
+        {"brand": "Georg Jensen | 조지젠슨",   "product": "엘리펀트 애쉬 7x10 cm, Stainless steel-pink",       "state" :"NEW",                    "salePrice": "", "price" : "72800", "likes": "45", "nums": "63", "imgSrc": "./images/pages/section10/item_img10.jpg"},
+        {"brand": "Bitz | 비츠",    "product": "에스프레소 컵 & 소서 7 cl 매트, Wood-ocean",       "state" :"NEW",            "salePrice": "", "price" : "17800", "likes": "75", "nums": "22", "imgSrc": "./images/pages/section10/item_img11.jpg"},
+        {"brand": "Muuto | 무토",      "product": "리스토어 수납 바스켓, Light Blue",     "state" :"NEW",          "salePrice": "", "price" : "128600", "likes": "94", "nums": "151", "imgSrc": "./images/pages/section10/item_img12.webp"}
+    ]
+}
