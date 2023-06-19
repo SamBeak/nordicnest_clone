@@ -1,0 +1,32 @@
+#header{
+    .nav__container{
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        border-top: 1px solid $bgColor;
+        border-bottom: 1px solid $bgColor;
+        .nav__sort{
+            .sort__list{
+                display: flex;
+                >li{
+                    margin-right: 25px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .nav__brand{
+            .brand__list{
+                display: flex;
+                >li{
+                    margin-left: 25px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

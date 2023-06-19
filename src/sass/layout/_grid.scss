@@ -2,10 +2,25 @@
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas: 
-    "onTop" 
+    "onTop"
     "header" 
-    "home" 
+    "aside" "home" 
     "footer";
+}
+#onTop{
+    grid-area: onTop;
+}
+#header{
+    grid-area: header;
+}
+#sidebar{
+    grid-area: aside;
+}
+#home{
+    grid-area: home;
+}
+#footer{
+    grid-area: footer;
 }
 
 #section19{

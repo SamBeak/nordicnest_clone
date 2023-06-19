@@ -1,5 +1,4 @@
 #header{
-    grid-area: header;
     position: sticky;
     top: 0;
     background-color: #fff;
@@ -69,30 +68,6 @@
                     border: 0;
                     background: url("../../../public/images/header/wishlist.svg") no-repeat 50% 50%;
                     background-size: 24px 24px;
-                }
-            }
-        }
-    }
-    .nav__container{
-        @include container;
-        display: flex;
-        justify-content: space-between;
-        padding: 12px 0;
-        border-top: 1px solid $bgColor;
-        border-bottom: 1px solid $bgColor;
-        .nav__sort{
-            .sort__list{
-                display: flex;
-                >li{
-                    margin-right: 25px;
-                }
-            }
-        }
-        .nav__brand{
-            .brand__list{
-                display: flex;
-                >li{
-                    margin-left: 25px;
                 }
             }
         }
