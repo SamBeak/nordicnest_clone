@@ -1,0 +1,45 @@
+#section21{
+    width: 100%;
+    padding: $sectionPadding;
+    .container{
+        @include container;
+        .content{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 40px;
+            .post__box{
+                width: 100%;
+                position: relative;
+                .post-inner__img{
+                    width: 100%;
+                    >img{
+                        width: 100%;
+                    }
+                }
+                .post-inner__text{
+                    .inner-text__text{
+                        position:absolute;
+                        z-index: 2;
+                        bottom: 5%;
+                        left: 5%;
+                        text-align: start;
+                        span{
+                            color: #fff;
+                            font-size: 18px;
+                            font-weight: 600;
+                            &:last-child{
+                                font-size: 42px;
+                            }
+                        }
+                    }
+                }
+                &:last-child{
+                    .inner-text__text{
+                        left: 5%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -7,3 +7,16 @@
     "home" 
     "footer";
 }
+
+#section19{
+    .content{
+        width: 100%;
+        .slide__container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(auto-fit, 1fr);
+            gap: 15px 15px;
+        }
+    }
+}

@@ -7,7 +7,12 @@ import Section14Component from './home/Section14Component'
 import Section15Component from './home/Section15Component'
 import Section16Component from './home/Section16Component'
 import Section17Component from './home/Section17Component'
+import Section18Component from './home/Section18Component'
+import Section19Component from './home/Section19Component'
 import Section1Component from './home/Section1Component'
+import Section20Component from './home/Section20Component'
+import Section21Component from './home/Section21Component'
+import Section22Component from './home/Section22Component'
 import Section2Component from './home/Section2Component'
 import Section3Component from './home/Section3Component'
 import Section4Component from './home/Section4Component'
@@ -37,6 +42,11 @@ export default function HomeComponent() {
       <Section15Component />
       <Section16Component />
       <Section17Component />
+      <Section18Component />
+      <Section19Component />
+      <Section20Component />
+      <Section21Component />
+      <Section22Component />
     </div>
   )
 }

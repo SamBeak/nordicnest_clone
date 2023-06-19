@@ -1,0 +1,30 @@
+{
+    "feed" : [
+        {"imgSrc" : "./images/pages/section19/user_img01.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img02.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img03.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img04.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img05.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img06.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img07.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img08.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img09.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img10.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img11.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img12.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img13.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img14.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img15.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img16.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img17.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img18.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img19.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img20.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img21.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img22.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img23.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img24.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img25.jpeg"},
+        {"imgSrc" : "./images/pages/section19/user_img26.jpeg"}
+    ]
+}

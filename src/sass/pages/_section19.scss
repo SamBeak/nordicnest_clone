@@ -1,0 +1,45 @@
+#section19{
+    width: 100%;
+    padding: $sectionPadding;
+    .container{
+        @include container;
+        .title{
+            width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+            p{
+                font-size: 20px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+        .content{
+            .slide__container{
+                .slide__content{
+                    a{
+                        width: 100%;
+                        img{
+                            width: 305px;
+                            height: 305px;
+                        }
+                    }
+                }
+            }
+            .slide-btn__box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 40px;
+                .slide__btn{
+                    border: 0;
+                    padding: 15px 20px;
+                    background-color: $bagieColor;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        background-color: #ffecd1;
+                    }
+                }
+            }
+        }
+    }
+}

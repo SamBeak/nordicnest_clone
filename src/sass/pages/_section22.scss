@@ -1,0 +1,36 @@
+#section22{
+    width: 100%;
+    padding: $sectionPadding;
+    .container{
+        .content{
+            a{
+                >img{
+                    padding-bottom: 40px;
+                    width: 100%;
+                }
+            }
+        }
+        .title{
+            @include container;
+            p{
+                font-size: 42px;
+                font-weight: 500;
+            }
+            span{
+                font-size: 14px;
+                >a{
+                    font-size: 14px;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .brid__box{
+            @include container;
+            padding: 20px 0;
+            >img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
