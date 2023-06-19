@@ -3,7 +3,7 @@ import React from 'react'
 export default function SidebarComponent() {
   return (
     <aside id="sidebar">
-        <div className="first">
+        <div className="siderbar__left">
             <div className="title">
                 <p>메뉴</p>
             </div>
@@ -18,29 +18,36 @@ export default function SidebarComponent() {
                 <ul className="user__box">
                     <li>
                         <a href="!#">
-                            <img src="" alt="" />
+                            <img src="./images/user.svg" alt="유저 아이콘" />
                             <span>마이페이지</span>
                         </a>
                     </li>
                     <li>
                         <a href="!#">
-                            <img src="" alt="" />
+                            <img src="./images/heart.svg" alt="위시리스트 아이콘" />
                             <span>위시리스트</span>
                         </a>
                     </li>
                     <li>
                         <a href="!#">
-                            <img src="" alt="" />
+                            <img src="./images/comment.svg" alt="고객서비스 아이콘" />
                             <span>고객서비스</span>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div className="second">
+        <div className="sidebar__right">
             <ul className="item-category__box">
                 <li><a href="!#">모든 테이블웨어</a></li>
-                <li><a href="!#">접시</a></li>
+                <li><a href="!#">접시 <i className="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="!#">머그컵 <i className="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="!#">볼 & 면기 <i className="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="!#">유리잔 & 글래스 <i className="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="!#">서빙용 주방용품 <i className="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="!#">저그 & 카라페 <i className="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="!#">커트러리 <i className="fa-solid fa-chevron-right"></i></a></li>
+                <li><a href="!#">와인 & 칵테일 <i className="fa-solid fa-chevron-right"></i></a></li>
             </ul>
         </div>
     </aside>
