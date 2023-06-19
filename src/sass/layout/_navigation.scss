@@ -11,8 +11,11 @@
                 display: flex;
                 >li{
                     margin-right: 25px;
-                    &:hover{
-                        text-decoration: underline;
+                    button{
+                        border: 0;
+                        &:hover{
+                            text-decoration: underline;
+                        }
                     }
                 }
             }

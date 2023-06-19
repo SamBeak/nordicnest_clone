@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function SidebarComponent() {
+export default function SidebarComponent({sidebar}) {
   return (
-    <aside id="sidebar">
+    <aside id="sidebar" ref={sidebar}>
         <div className="siderbar__left">
             <div className="title">
                 <p>메뉴</p>

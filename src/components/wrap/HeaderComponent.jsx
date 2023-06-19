@@ -1,6 +1,9 @@
 import React from 'react'
+import SidebarComponent from './SidebarComponent';
 
 export default function HeaderComponent() {
+  const sidebar = React.useRef();
+  const [ isNavBar, setIsNavBar ] = React.useState(false);
   const [ state, setState ] = React.useState({
     isSearch: false
   });
@@ -25,6 +28,22 @@ export default function HeaderComponent() {
         searchMsg: value
       })
     }
+  };
+
+  React.useEffect(() => {
+    if(isNavBar === true){
+      sidebar.current.style.transition = `all 0.3s ease-in-out`;
+      sidebar.current.style.transform = `translateX(0)`;
+    }
+  });
+
+  // 네비게이션바 클릭 이벤트
+  const onClickNavBar = (e) => {
+    e.preventDefault();
+    setIsNavBar(true);
+    const {value} = e.target;
+    console.log(value);
+    console.log(isNavBar);
   };
 
   return (
@@ -53,12 +72,12 @@ export default function HeaderComponent() {
       <nav className="nav__container">
         <div className="nav__sort">
           <ul className="sort__list">
-            <li><a href="!#">테이블웨어</a></li>
-            <li><a href="!#">인테리어소품</a></li>
-            <li><a href="!#">주방</a></li>
-            <li><a href="!#">조명</a></li>
-            <li><a href="!#">러그 & 패브릭</a></li>
-            <li><a href="!#">수납 & 가구</a></li>
+            <li><button type='button' onClick={onClickNavBar} value="테이블웨어">테이블웨어</button></li>
+            <li><button type='button'>인테리어소품</button></li>
+            <li><button type='button'>주방</button></li>
+            <li><button type='button'>조명</button></li>
+            <li><button type='button'>러그 & 패브릭</button></li>
+            <li><button type='button'>수납 & 가구</button></li>
           </ul>
         </div>
         <div className="nav__brand">
@@ -71,6 +90,7 @@ export default function HeaderComponent() {
           </ul>
         </div>
       </nav>
+      <SidebarComponent sidebar={sidebar} />
     </header>
   )
 }
