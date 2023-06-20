@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 import SidebarComponent from './SidebarComponent';
 
 export default function HeaderComponent() {
   const sidebar = React.useRef();
+  const sidebarContainer = React.useRef();
   const [ isNavBar, setIsNavBar ] = React.useState(false);
   const [ state, setState ] = React.useState({
     isSearch: false
@@ -30,6 +31,7 @@ export default function HeaderComponent() {
     }
   };
 
+  // 네비게이션 모덜창 이벤트
   React.useEffect(() => {
     if(isNavBar === true){
       sidebar.current.style.transition = `all 0.3s ease-in-out`;
@@ -37,7 +39,7 @@ export default function HeaderComponent() {
     }
   });
 
-  // 네비게이션바 클릭 이벤트
+  // 네비게이션바 열기 클릭 이벤트
   const onClickNavBar = (e) => {
     e.preventDefault();
     setIsNavBar(true);
@@ -45,6 +47,8 @@ export default function HeaderComponent() {
     console.log(value);
     console.log(isNavBar);
   };
+  
+  // 네비게이션바 닫기 클릭 이벤트
 
   return (
     <header id="header">
@@ -90,7 +94,9 @@ export default function HeaderComponent() {
           </ul>
         </div>
       </nav>
-      <SidebarComponent sidebar={sidebar} />
+      {
+        isNavBar === true ? <SidebarComponent sidebar={sidebar} sidebarContainer={sidebarContainer} /> : null
+      }
     </header>
   )
 }
