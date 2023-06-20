@@ -1,14 +1,38 @@
 import React from 'react';
+import axios from 'axios';
 import SidebarComponent from './SidebarComponent';
 
 export default function HeaderComponent() {
   const sidebar = React.useRef();
-  const sidebarContainer = React.useRef();
   const [ isNavBar, setIsNavBar ] = React.useState(false);
   const [ state, setState ] = React.useState({
-    isSearch: false
+    isSearch: false,
+    name: '',
+    category: [],
+    sort: []
   });
 
+  React.useEffect(() => {
+    axios({
+      url: './data/nav/navigation.json',
+      method: 'GET'
+    })
+    .then((res) => {
+      if(res.status === 200){
+
+        setState({
+          ...state,
+          category: res.data.category
+        });
+        
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  }, []);
+  
+  // 검색창 변화 이벤트
   const onChangeSearching =(e) => {
     const { value } = e.target;
     let isSearch = false;
@@ -17,16 +41,14 @@ export default function HeaderComponent() {
       isSearch = true;
       setState({
         ...state,
-        isSearch: isSearch,
-        searchMsg: value
+        isSearch: isSearch
       });
     }
     else{
       isSearch = false;
       setState({
         ...state,
-        isSearch: isSearch,
-        searchMsg: value
+        isSearch: isSearch
       })
     }
   };
@@ -44,12 +66,14 @@ export default function HeaderComponent() {
     e.preventDefault();
     setIsNavBar(true);
     const {value} = e.target;
-    console.log(value);
-    console.log(isNavBar);
+    setState({
+      ...state,
+      name: value
+    });
   };
   
-  // 네비게이션바 닫기 클릭 이벤트
 
+  
   return (
     <header id="header">
       <div className="container">
@@ -77,11 +101,11 @@ export default function HeaderComponent() {
         <div className="nav__sort">
           <ul className="sort__list">
             <li><button type='button' onClick={onClickNavBar} value="테이블웨어">테이블웨어</button></li>
-            <li><button type='button'>인테리어소품</button></li>
-            <li><button type='button'>주방</button></li>
-            <li><button type='button'>조명</button></li>
-            <li><button type='button'>러그 & 패브릭</button></li>
-            <li><button type='button'>수납 & 가구</button></li>
+            <li><button type='button' onClick={onClickNavBar} value="인테리어소품">인테리어소품</button></li>
+            <li><button type='button' onClick={onClickNavBar} value="주방">주방</button></li>
+            <li><button type='button' onClick={onClickNavBar} value="조명">조명</button></li>
+            <li><button type='button' onClick={onClickNavBar} value="러그 & 패브릭">러그 & 패브릭</button></li>
+            <li><button type='button' onClick={onClickNavBar} value="수납 & 가구">수납 & 가구</button></li>
           </ul>
         </div>
         <div className="nav__brand">
@@ -95,7 +119,7 @@ export default function HeaderComponent() {
         </div>
       </nav>
       {
-        isNavBar === true ? <SidebarComponent sidebar={sidebar} sidebarContainer={sidebarContainer} /> : null
+        isNavBar === true ? <SidebarComponent sidebar={sidebar} setIsNavBar={setIsNavBar} category={state.category} name={state.name}/> : null
       }
     </header>
   )

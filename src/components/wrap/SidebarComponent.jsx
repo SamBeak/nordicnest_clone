@@ -1,11 +1,28 @@
 import React from 'react';
 
-export default function SidebarComponent({sidebar, sidebarContainer}) {
+export default function SidebarComponent({sidebar, setIsNavBar, category, name}) {
 
     
+
+//    React.useEffect(() => {
+//     console.log(category);
+//     console.log(name);
+//    });
+
+
+    // 네비게이션바 닫기 클릭 이벤트
+    const onClickClose = (e) => {
+        e.preventDefault();
+        if( e.target === sidebar.current){
+            setIsNavBar(false);
+            sidebar.current.style.transform = `translateX(-100vh)`;
+            sidebar.current.style.backgroundColor = `rgba(0, 0, 0, 0)`;
+        }
+    };
+
   return (
-    <aside id="sidebar" ref={sidebar}>
-        <div className="sidebar__container" ref={sidebarContainer}>
+    <aside id="sidebar" ref={sidebar} onClick={onClickClose}>
+        <div className="sidebar__container">
             <div className="siderbar__left">
                 <div className="title">
                     <p>메뉴</p>
@@ -42,15 +59,32 @@ export default function SidebarComponent({sidebar, sidebarContainer}) {
             </div>
             <div className="sidebar__right">
                 <ul className="item-category__box">
-                    <li><a href="!#">모든 테이블웨어</a></li>
-                    <li><a href="!#">접시 <i className="fa-solid fa-chevron-right"></i></a></li>
+                    {
+                        category.map((item, idx) => {
+                            if(item.name === name){
+                                return(
+                                    <div key={idx}>
+                                        <li><a href="!#">모든 {name}</a></li>
+                                        {
+                                            item.sort.map((sort, num) => {
+                                                return(
+                                                    <li key={num}><a href="!#">{sort.kind} <i className="fa-solid fa-chevron-right"></i></a></li>
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                )
+                            }
+                        })
+                    }
+                    {/* <li><a href="!#">접시 <i className="fa-solid fa-chevron-right"></i></a></li>
                     <li><a href="!#">머그컵 <i className="fa-solid fa-chevron-right"></i></a></li>
                     <li><a href="!#">볼 & 면기 <i className="fa-solid fa-chevron-right"></i></a></li>
                     <li><a href="!#">유리잔 & 글래스 <i className="fa-solid fa-chevron-right"></i></a></li>
                     <li><a href="!#">서빙용 주방용품 <i className="fa-solid fa-chevron-right"></i></a></li>
                     <li><a href="!#">저그 & 카라페 <i className="fa-solid fa-chevron-right"></i></a></li>
                     <li><a href="!#">커트러리 <i className="fa-solid fa-chevron-right"></i></a></li>
-                    <li><a href="!#">와인 & 칵테일 <i className="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a href="!#">와인 & 칵테일 <i className="fa-solid fa-chevron-right"></i></a></li> */}
                 </ul>
             </div>
         </div>
