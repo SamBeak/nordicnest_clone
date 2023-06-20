@@ -1,4 +1,12 @@
 #footer{
+    .brid__box{
+        @include container;
+        padding: 20px 0;
+        >img{
+            width: 100px;
+            height: 100px;
+        }
+    }
     .news__container{
         @include container;
         padding-bottom: 40px;

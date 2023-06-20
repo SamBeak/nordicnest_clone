@@ -24,13 +24,5 @@
                 }
             }
         }
-        .brid__box{
-            @include container;
-            padding: 20px 0;
-            >img{
-                width: 100px;
-                height: 100px;
-            }
-        }
     }
 }

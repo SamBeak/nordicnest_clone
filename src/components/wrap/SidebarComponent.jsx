@@ -2,13 +2,6 @@ import React from 'react';
 
 export default function SidebarComponent({sidebar, setIsNavBar, category, name}) {
 
-    
-
-//    React.useEffect(() => {
-//     console.log(category);
-//     console.log(name);
-//    });
-
 
     // 네비게이션바 닫기 클릭 이벤트
     const onClickClose = (e) => {

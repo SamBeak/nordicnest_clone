@@ -4,6 +4,11 @@
     margin: 0 auto;
     padding: 0 40px;
 }
+@mixin csContainer{
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+}
 @mixin easing3{
     transition: all 0.3s ease-in-out;
 }

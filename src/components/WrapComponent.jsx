@@ -1,5 +1,6 @@
 import React from 'react'
-// import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import CustomerService from './wrap/cs/CustomerService'
 
 // Component List
 import FooterComponent from './wrap/FooterComponent'
@@ -12,9 +13,17 @@ export default function WrapComponent() {
   return (
     <div id="wrap">
       <OnTopComponent />
-      <HeaderComponent />
-      {/* <SidebarComponent /> */}
-      <HomeComponent />
+      
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<HeaderComponent />} >
+            <Route index element={<HomeComponent />} />
+            <Route path='/home' element={<HomeComponent />} />
+            <Route path='/cs' element={<CustomerService />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+
       <FooterComponent />
     </div>
   )

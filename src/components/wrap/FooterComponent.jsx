@@ -3,6 +3,10 @@ import React from 'react'
 export default function FooterComponent() {
   return (
     <footer id="footer">
+      <div className="brid__box">
+          <img src="./images/first_bird.svg" alt="첫번째 새" />
+          <img src="./images/second_bird.svg" alt="두번째 새" />
+      </div>
       <div className="news__container">
         <div className="title">
           <p>뉴스레터 구독하고 5% 할인코드 받기</p>
