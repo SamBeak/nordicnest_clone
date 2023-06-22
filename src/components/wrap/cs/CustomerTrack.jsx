@@ -2,18 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Section1Component from '../home/Section1Component';
 
-export default function CustomerService() {
+export default function CustomerTrack() {
   return (
     <div id="customer">
         <Section1Component />
         <div className="container">
             <div className="top-tap__container">
                 <div className="top-tap__left">
-                    <Link to='/'><img src="./images/cs/house.svg" alt="메인으로" /></Link>
+                    <Link to="/"><img src="./images/cs/house.svg" alt="메인으로" /></Link>
                 </div>
                 <div className="top-tap__right">
                     <p>
-                        <Link to='/'>고객서비스</Link>
+                        <Link to='/cs'>고객서비스</Link>
+                        <span> / 배송 조회 </span>
                     </p>
                 </div>
             </div>
@@ -33,24 +34,15 @@ export default function CustomerService() {
             <div className="tap-inner__container">
                 <div className="tap-inner__text">
                     <p>
-                        <h1>고객서비스 운영안내</h1>
-                        <p>어떤 색상이 여러분의 집에 가장 잘 어울릴 지, 주문한 물건이 언제 도착할 지 등 저희 고객센터는 노르딕네스트와의 경험의 시작부터 끝까지 모든 과정에서 도움을 드리고 있습니다. 언제든 도움이 필요하실 때 연락 부탁드립니다.</p>
+                        <h1>배송 조회</h1>
+                        <p>주문하신 제품이 출고되면 운송장 번호와 함께 배송 확인 이메일을 보내드립니다. 보내드린 운송장 번호로 각 배송사 배송추적 페이지에서 배송 조회가 가능합니다.</p>
                     </p>
+                    <p>고객님의 주문은 선택하신 배송방법을 통해 스웨덴에서 한국으로 바로 발송됩니다. 한국에 주문이 도착하면 우체국 또는 해당 운송사로 인계됩니다. </p>
+                    <p><a href="!#">ECMS 배송조회</a></p>
+                    <p><a href="!#">FEDEX (페덱스) 배송조회</a></p>
                 </div>
-                <div className="tap-inner__text">
-                    <p><strong>카카오톡 문의</strong></p>
-                    <p>노르딕네스트 카카오톡 채널 추가 후 챗봇 또는 1:1 상담 기능을 이용해보세요! <a href="!#">(바로가기)</a></p>
-                </div>
-                <div className="tap-inner__text">
-                    <p><strong>사이트 내 채팅문의</strong></p>
-                    <p>사이트 내 쇼핑 중 문의사항이 있는 경우 우측 하단의 채팅버튼을 클릭하거나 여기를 눌러 바로 1:1 상담 기능을 이용해보세요!</p>
-                    <p>※채팅 운영시간: 평일 10시 ~ 16시</p>
-                </div>
-                <div className="tap-inner__text">
-                    <p><strong>한국어 이메일문의</strong></p>
-                    <p>이메일문의의 경우 영업일 기준 24시간 내 회신을 드리는 것을 목표로 합니다.</p>
-                    <p><a href="!#">info@nordicnest.kr</a></p>
-                    <p>제품의 파손, 하자 등으로 인한 교환 및 환불 요청은 <a href="!#">여기</a>를 클릭해 등록하실 수 있습니다.</p>
+                <div className="tap-inner__img">
+                    <img src="./images/cs/faq.jpg" alt="FAQ" />
                 </div>
             </div>
         </div>
