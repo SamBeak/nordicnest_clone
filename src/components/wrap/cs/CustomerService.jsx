@@ -13,7 +13,7 @@ export default function CustomerService() {
                 </div>
                 <div className="top-tap__right">
                     <p>
-                        <Link to='/'>고객서비스</Link>
+                        <Link to='/cs'>고객서비스</Link>
                     </p>
                 </div>
             </div>
@@ -33,8 +33,8 @@ export default function CustomerService() {
             <div className="tap-inner__container">
                 <div className="tap-inner__text">
                     <p>
-                        <h1>고객서비스 운영안내</h1>
-                        <p>어떤 색상이 여러분의 집에 가장 잘 어울릴 지, 주문한 물건이 언제 도착할 지 등 저희 고객센터는 노르딕네스트와의 경험의 시작부터 끝까지 모든 과정에서 도움을 드리고 있습니다. 언제든 도움이 필요하실 때 연락 부탁드립니다.</p>
+                        <b>고객서비스 운영안내</b>
+                        <span>어떤 색상이 여러분의 집에 가장 잘 어울릴 지, 주문한 물건이 언제 도착할 지 등 저희 고객센터는 노르딕네스트와의 경험의 시작부터 끝까지 모든 과정에서 도움을 드리고 있습니다. 언제든 도움이 필요하실 때 연락 부탁드립니다.</span>
                     </p>
                 </div>
                 <div className="tap-inner__text">

@@ -34,7 +34,7 @@ export default function CustomerContact() {
             <div className="tap-inner__container">
                 <div className="tap-inner__text">
                     <p>
-                        <h1>연락처</h1>
+                        <b>연락처</b>
                         <strong>한국고객 전용 고객센터</strong>
                     </p>
                     <p>노르딕네스트는 고객님께 최상의 서비스를 제공하기 위해 노력하고 있습니다. 고객센터에서는 주말 및 공휴일을 제외하고 모든 문의 메일에 대해 영업일 기준 24시간 내 회신을 드리는 것을 목표로 합니다.</p>
@@ -49,8 +49,8 @@ export default function CustomerContact() {
                 </div>
                 <div className="tap-inner__text">
                     <p>( 스웨덴의 공휴일: 5월 1일/5월 18일/6월 6일/6월 23일/12월 25일/12월 26일)</p>
-                    <p><b>이메일 고객센터:</b><span> 한국의 공휴일과 스웨덴의 공휴일</span></p>
-                    <p><b>홈페이지 및 카카오톡 채팅상담:</b><span> 한국의 공휴일</span></p>
+                    <p><em>이메일 고객센터:</em><span> 한국의 공휴일과 스웨덴의 공휴일</span></p>
+                    <p><em>홈페이지 및 카카오톡 채팅상담:</em><span> 한국의 공휴일</span></p>
                     <p>문의사항이 있으시면 언제든지 연락해주시기 바랍니다.</p>
                 </div>
             </div>

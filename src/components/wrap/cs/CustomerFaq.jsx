@@ -4,8 +4,8 @@ import axios from 'axios';
 import Section1Component from '../home/Section1Component';
 
 export default function CustomerFaq() {
-    const chevIcon = React.useRef();
     const [isClick,setIsClick] = React.useState(false);
+    const [clickNum,setClickNum] = React.useState(0);
     const [state,setState] = React.useState({
         faq: []
     });
@@ -30,16 +30,11 @@ export default function CustomerFaq() {
     
     // 자주하는 질문상자 클릭 이벤트
     const onClickFaq =(e) => {
-        e.preventDefault();
-        console.log(e);
+        setClickNum(e);
         if(isClick === false) {
-            chevIcon.current.style.transition = `all 0.3s ease-in-out`;
-            chevIcon.current.style.transform = `scaleY(-1)`;
             setIsClick(true);
         }
         else if(isClick === true) {
-            chevIcon.current.style.transition = `all 0.3s ease-in-out`;
-            chevIcon.current.style.transform = `scaleY(1)`;
             setIsClick(false);
         }
     };
@@ -76,8 +71,8 @@ export default function CustomerFaq() {
             <div className="tap-inner__container">
                 <div className="tap-inner__text">
                     <p>
-                        <h1>FAQ - 자주 묻는 질문</h1>
-                        <p>이곳에서 자주묻는질문을 확인해보세요. 만약 원하는 답변을 찾지 못한 경우 고객센터로 연락 부탁드립니다.</p>
+                        <b>FAQ - 자주 묻는 질문</b>
+                        <span>이곳에서 자주묻는질문을 확인해보세요. 만약 원하는 답변을 찾지 못한 경우 고객센터로 연락 부탁드립니다.</span>
                     </p>
                     <p>- 이메일 고객센터: info@nordicnest.kr - 카카오톡 고객센터: [<a href="!#">상담 바로가기</a>]</p>
                 </div>
@@ -86,13 +81,13 @@ export default function CustomerFaq() {
                 {
                     state.faq.map((item,idx) => {
                         return(
-                            <div className="tap-faq__box" onClick={onClickFaq} key={idx}>
+                            <div className="tap-faq__box" onClick={() => onClickFaq(idx)} key={idx}>
                                 <div className="tap-faq__top">
                                     <span>{item.question}</span>
-                                    <i className="fa-solid fa-chevron-down" ref={chevIcon}></i>
+                                    <i className={clickNum === idx && isClick ? "fa-solid fa-chevron-down on" : "fa-solid fa-chevron-down"}></i>
                                 </div>
-                                <div className="tap-faq__bottom">
-                                    <span>{isClick ? item.answer : ''}</span>
+                                <div className="tap-faq__bottom" >
+                                    <span>{clickNum === idx && isClick ? item.answer : ''}</span>
                                 </div>
                             </div>
                         )

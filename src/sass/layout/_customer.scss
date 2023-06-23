@@ -50,7 +50,8 @@
                 p{
                     padding-bottom: 30px;
                     font-size: 14px;
-                    h1{
+                    b{
+                        display: block;
                         font-size: 42px;
                     }
                     strong{
@@ -61,11 +62,12 @@
                         font-size: 14px;
                         font-style: italic;
                     }
-                    b{
+                    em{
                         font-size: 14px;
                         font-weight: 700;
                     }
-                    p{
+                    span{
+                        display: inline;
                         padding-bottom: 10px;
                     }
                     a{
@@ -164,6 +166,14 @@
                     >span{
                         font-size: 16px;
                         font-weight: 500;
+                    }
+                    i{
+                        transform: scaleY(1);
+                        transition: all 0.2s ease-in-out;
+                        &.on{
+                            transform: scaleY(-1);
+                            transition: all 0.2s ease-in-out;
+                        }
                     }
                 }
                 .tap-faq__bottom{
