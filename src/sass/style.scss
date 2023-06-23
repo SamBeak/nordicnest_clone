@@ -1,7 +1,7 @@
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/placeholders';
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+@import 'abstracts/placeholders';
 
 @import 'base/animations';
 @import 'base/base';
@@ -25,7 +25,7 @@
 @import 'layout/sidebar';
 
 @import 'pages/join';
-@import 'pages/login';
+@import 'pages/signin';
 @import 'pages/section1';
 @import 'pages/section2';
 @import 'pages/section3';

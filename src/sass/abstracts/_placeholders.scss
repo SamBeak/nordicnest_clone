@@ -1,0 +1,12 @@
+#signin{
+    .user-modal__bottom{
+        form{
+            input{
+                &::placeholder{
+                    font-size: 16px;
+                    color: $brandColor;
+                }
+            }
+        }
+    }
+}

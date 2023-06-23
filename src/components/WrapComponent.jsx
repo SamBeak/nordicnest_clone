@@ -28,6 +28,7 @@ export default function WrapComponent() {
           <Route path='/' element={<HeaderComponent />} >
             <Route index element={<HomeComponent />} />
             <Route path='/home' element={<HomeComponent />} />
+
             {/*Customer-Service */}
             <Route path='/cs' element={<CustomerService />} />
             <Route path='/contact' element={<CustomerContact />} />

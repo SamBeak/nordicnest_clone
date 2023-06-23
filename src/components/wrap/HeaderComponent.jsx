@@ -2,10 +2,12 @@ import React from 'react';
 import axios from 'axios';
 import { Link, Outlet } from 'react-router-dom';
 import SidebarComponent from './SidebarComponent';
+import SigninComponent from './user/SigninComponent';
 
 export default function HeaderComponent() {
   const sidebar = React.useRef();
   const [ isNavBar, setIsNavBar ] = React.useState(false);
+  const [ isSignin, setIsSignin ] = React.useState(false);
   const [ state, setState ] = React.useState({
     isSearch: false,
     name: '',
@@ -54,13 +56,13 @@ export default function HeaderComponent() {
     }
   };
 
-  // 네비게이션 모덜창 이벤트
-  React.useEffect(() => {
-    if(isNavBar === true){
-      sidebar.current.style.transition = `all 0.3s ease-in-out`;
-      sidebar.current.style.transform = `translateX(0)`;
-    }
-  });
+  // 네비게이션 모달창 이벤트
+  // React.useEffect(() => {
+  //   if(isNavBar === true){
+  //     sidebar.current.style.transition = `all 0.3s ease-in-out`;
+  //     sidebar.current.style.transform = `translateX(0)`;
+  //   }
+  // });
 
   // 네비게이션바 열기 클릭 이벤트
   const onClickNavBar = (e) => {
@@ -71,6 +73,15 @@ export default function HeaderComponent() {
       ...state,
       name: value
     });
+  };
+  
+
+  // 로그인 모달창 열기 클릭 이벤트
+  const onClickSignin = (e) => {
+    
+    if(isSignin === false){
+      setIsSignin(true);
+    }
   };
   
 
@@ -93,7 +104,7 @@ export default function HeaderComponent() {
             </div>
             <div className="user__box">
               <Link to="/cs"><img src="./images/header/comment.svg" alt="고객서비스 아이콘" /></Link>
-              <Link to="/"><img src="./images/header/user.svg" alt="로그인/회원가입 아이콘" /></Link>
+              <button type='button' className='blind' onClick={onClickSignin}>로그인/회원가입 아이콘</button>
               <Link to="/"><img src="./images/header/heart.svg" alt="위시리스트 아이콘" /></Link>
               <button type='button' className='blind'>장바구니</button>
             </div>
@@ -122,6 +133,9 @@ export default function HeaderComponent() {
         </nav>
         {
           isNavBar === true ? <SidebarComponent sidebar={sidebar} setIsNavBar={setIsNavBar} category={state.category} name={state.name}/> : null
+        }
+        {
+          isSignin === true ? <SigninComponent /> : null
         }
       </header>
       <Outlet/>
