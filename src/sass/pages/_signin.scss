@@ -7,7 +7,7 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
     .signin__container{
-        margin: 100px auto 0 auto;
+        margin: 30px auto 0 auto;
         width: min(100%, 480px);
         background-color: #fff;
         .user-modal__top{
@@ -19,13 +19,15 @@
                 li{
                     width: 100%;
                     text-align: center;
-                    &:last-child{
-                        background-color: $bgColor;
-                    }
-                    a{
-                        display: block;
+                    button{
+                        width: 100%;
+                        border:0;
                         font-size: 16px;
                         padding: 12px 24px;
+                        background-color: #fff;
+                        &.on{
+                            background-color: $bgColor;
+                        }
                     }
                 }
             }

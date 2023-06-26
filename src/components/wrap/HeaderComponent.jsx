@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { Link, Outlet } from 'react-router-dom';
 import SidebarComponent from './SidebarComponent';
-import SigninComponent from './user/SigninComponent';
+import SignModalComponent from './user/SignModalComponent';
 
 export default function HeaderComponent() {
   const sidebar = React.useRef();
@@ -57,12 +57,12 @@ export default function HeaderComponent() {
   };
 
   // 네비게이션 모달창 이벤트
-  // React.useEffect(() => {
-  //   if(isNavBar === true){
-  //     sidebar.current.style.transition = `all 0.3s ease-in-out`;
-  //     sidebar.current.style.transform = `translateX(0)`;
-  //   }
-  // });
+  React.useEffect(() => {
+    if(isNavBar === true){
+      sidebar.current.style.transition = `all 0.3s ease-in-out`;
+      sidebar.current.style.transform = `translateX(0)`;
+    }
+  });
 
   // 네비게이션바 열기 클릭 이벤트
   const onClickNavBar = (e) => {
@@ -135,7 +135,7 @@ export default function HeaderComponent() {
           isNavBar === true ? <SidebarComponent sidebar={sidebar} setIsNavBar={setIsNavBar} category={state.category} name={state.name}/> : null
         }
         {
-          isSignin === true ? <SigninComponent /> : null
+          isSignin === true ? <SignModalComponent setIsSignin={setIsSignin} /> : null
         }
       </header>
       <Outlet/>
