@@ -123,7 +123,7 @@ export default function HeaderComponent() {
           </div>
           <div className="nav__brand">
             <ul className="brand__list">
-              <li><Link to="/">신상품</Link></li>
+              <li><Link to="/new-arrivals">신상품</Link></li>
               <li><Link to="/">브랜드</Link></li>
               <li><Link to="/">기획전</Link></li>
               <li><Link to="/">매거진</Link></li>

@@ -17,6 +17,7 @@ import CustomerTermsCondition from './wrap/cs/CustomerTermsCondition'
 import CustomerPrivacyPolicy from './wrap/cs/CustomerPrivacyPolicy'
 import CustomerCookies from './wrap/cs/CustomerCookies'
 import CustomerFaq from './wrap/cs/CustomerFaq'
+import NewArrivalsComponent from './wrap/new/NewArrivalsComponent'
 
 export default function WrapComponent() {
   return (
@@ -28,7 +29,8 @@ export default function WrapComponent() {
           <Route path='/' element={<HeaderComponent />} >
             <Route index element={<HomeComponent />} />
             <Route path='/home' element={<HomeComponent />} />
-
+            {/*New-Arrivals */}
+            <Route path='/new-arrivals' element={<NewArrivalsComponent />} />
             {/*Customer-Service */}
             <Route path='/cs' element={<CustomerService />} />
             <Route path='/contact' element={<CustomerContact />} />
