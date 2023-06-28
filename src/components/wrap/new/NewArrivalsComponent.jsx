@@ -14,15 +14,15 @@ export default function NewArrivalsComponent() {
                 </div>
                 <div className="top-tap__right">
                     <p>
-                        <Link to='/new'>신상품</Link>
+                        <span>신상품</span>
                     </p>
                 </div>
             </div>
             <div className="mid-tap__container">
                 <div className="mid-tap__title">
-                    <h2>신상품</h2>
+                    <h1>신상품</h1>
                 </div>
-                <span>인기 브랜드 신상품</span>
+                <p>인기 브랜드 신상품</p>
                 <div className="mid-tap__content">
                     <div className="img__box">
                         <img src="./images/new/category01.png" alt="이탈라" />
@@ -77,11 +77,97 @@ export default function NewArrivalsComponent() {
             <Section17Component />
             <div className="bot-tap__container">
                 <div className="bot-top__box">
-                    <button>2872 정렬 기준 신상품순<i></i></button>
+                    <span>2872 정렬 기준</span><button> 신상품순<i className="fa-solid fa-chevron-down"></i></button>
                 </div>
                 <div className="bot-bot__box">
-                    <div className="bot-left__box"></div>
-                    <div className="bot-right__box"></div>
+                    <div className="bot-left__box">
+                        <ul className="category-filter__box">
+                            <li>
+                                <h4>카테고리</h4>
+                                <span>187<i className="fa-solid fa-chevron-down"></i></span>
+                            </li>
+                            <li>
+                                <h4>재고있는 제품만 보기</h4>
+                                <input type="checkbox" />
+                            </li>
+                            <li className='multi-range__box'>
+                                {/* 진짜 슬라이더 */}
+                                <input type="range" id="input-left" min="0" max="100"  />
+                                <input type="range" id="input-right" min="0" max="100"  />
+                                {/* 커스텀 슬라이더 */}
+                                <div className="slider">
+                                    <div className="track"></div>
+                                    <div className="range"></div>
+                                    <div className="thumb left"></div>
+                                    <div className="thumb right"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="bot-right__box">
+                        <ul className="item__container">
+                            <li className="item__box">
+                                <div className="item-sale__box">
+                                    <span>SALE</span>
+                                </div>
+                                <div className='item-img__box'>
+                                    <a href="!#">
+                                        <img src="./images/pages/section6/item_img01.jpg" alt="Gense | 겐세" />
+                                        <div className='item-brand__box'>Gense | 겐세 <br /><span>포커스디럭스 커트러리 12 pcs, stainless steel</span></div>
+                                        <div className='item-price__box'><span>￦{commaPrice(14000)}</span><span>￦{commaPrice(18000)}</span></div>
+                                    </a>
+                                </div>
+                                <div className='item-nums__box'>
+                                    <i className="fa-solid fa-circle fa-2xs"></i>
+                                    <span>재고 있음</span>
+                                </div>
+                                <div className="item-icon__box">
+                                    <button className="item-icon"><img src="./images/heart.svg" alt="좋아요" /></button>
+                                    <button className="item-icon"><img src="./images/wishList.svg" alt="장바구니 담기" /></button>
+                                </div>
+                            </li>
+                            <li className="item__box">
+                                <div className="item-sale__box">
+                                    <span>SALE</span>
+                                </div>
+                                <div className='item-img__box'>
+                                    <a href="!#">
+                                        <img src="./images/pages/section6/item_img01.jpg" alt="Gense | 겐세" />
+                                        <div className='item-brand__box'>Gense | 겐세 <br /><span>포커스디럭스 커트러리 12 pcs, stainless steel</span></div>
+                                        <div className='item-price__box'><span>￦{commaPrice(14000)}</span><span>￦{commaPrice(18000)}</span></div>
+                                    </a>
+                                </div>
+                                <div className='item-nums__box'>
+                                    <i className="fa-solid fa-circle fa-2xs"></i>
+                                    <span>재고 있음</span>
+                                </div>
+                                <div className="item-icon__box">
+                                    <button className="item-icon"><img src="./images/heart.svg" alt="좋아요" /></button>
+                                    <button className="item-icon"><img src="./images/wishList.svg" alt="장바구니 담기" /></button>
+                                </div>
+                            </li>
+                            <li className="item__box">
+                                <div className="item-sale__box">
+                                    <span>SALE</span>
+                                </div>
+                                <div className='item-img__box'>
+                                    <a href="!#">
+                                        <img src="./images/pages/section6/item_img01.jpg" alt="Gense | 겐세" />
+                                        <div className='item-brand__box'>Gense | 겐세 <br /><span>포커스디럭스 커트러리 12 pcs, stainless steel</span></div>
+                                        <div className='item-price__box'><span>￦{commaPrice(14000)}</span><span>￦{commaPrice(18000)}</span></div>
+                                    </a>
+                                </div>
+                                <div className='item-nums__box'>
+                                    <i className="fa-solid fa-circle fa-2xs"></i>
+                                    <span>재고 있음</span>
+                                </div>
+                                <div className="item-icon__box">
+                                    <button className="item-icon"><img src="./images/heart.svg" alt="좋아요" /></button>
+                                    <button className="item-icon"><img src="./images/wishList.svg" alt="장바구니 담기" /></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,4 +1,203 @@
 #newArrivals{
     width: 100%;
-    background-color: tomato;
+    .container{
+        padding-top: 15px;
+        .top-tap__container{
+            @include container;
+            display: flex;
+            padding-bottom: 50px;
+            .top-tap__left{
+                a{
+                    img{
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+            .top-tap__right{
+                padding-left: 10px;
+                p{
+                    font-size: 12px;
+                    a{
+                        color: $fontColor;
+                    }
+                    span{
+                        color: $brandColor;
+                    }
+                }
+            }
+        }
+        .mid-tap__container{
+            .mid-tap__title{
+                @include container;
+                margin-bottom: 24px;
+                h1{
+                    font-size: 30px;
+                }
+            }
+            >p{
+                font-size: 20px;
+                text-align: center;
+                padding-bottom: 25px;
+            }
+            .mid-tap__content{
+                width: min(100%, 1600px);
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 40px;
+                .img__box{
+                    position: relative;
+                    z-index: 1;
+                    width: 30.83rem;
+                    height: 23.33rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .text__box{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 2;
+                        p{
+                            font-size: 30px;
+                            font-weight: 500;
+                            color: #fff;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        .bot-tap__container{
+            @include container;
+            .bot-top__box{
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                >button{
+                    border: 0;
+                    margin-left: 5px;
+                    i{
+                        margin-left: 15px;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+            .bot-bot__box{
+                width: 100%;
+                display: grid;
+                grid-template-columns: auto 1fr;
+                .bot-left__box{
+                    width: 25rem;
+                    .category-filter__box{
+                        li{
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 16px 0;
+                            >h4{
+                                font-size: 16px;
+                            }
+                            >span{
+                                font-size: 12px;
+                                color: $brandColor;
+                                >i{
+                                    color: $fontColor;
+                                    padding-left: 10px;
+                                }
+                            }
+                            input[type="checkbox"]{
+                                width: 1.5rem;
+                                height: 1.5rem;
+                                color: $subColor;
+                            }
+                        }
+                    }
+                }
+                .bot-right__box{
+                    width: 100%;
+                    .item__container{
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: repeat(3, minmax(max-content, 1fr));
+                        column-gap: 45px;
+                        .item__box{
+                            width: 100%;
+                            border-bottom: 1px solid $bgColor;
+                            padding: 24px 0 0 24px;
+                            .item-sale__box{
+                                width: 100%;
+                                text-align: end;
+                                >span{
+                                    background-color: $redColor;
+                                    color: #fff;
+                                    font-size: 11px;
+                                    font-weight: 600;
+                                    padding: 4px 5px;
+                                }
+                            }
+                            .item-img__box{
+                                width: 100%;
+                                a{
+                                    img{
+                                        width: 23.16rem;
+                                        height: 23.16rem;
+                                    }
+                                    .item-brand__box{
+                                        color: $brandColor;
+                                        span{
+                                            color: $fontColor;
+                                        }
+                                    }
+                                    .item-price__box{
+                                        color: $redColor;
+                                        span{
+                                            color: $redColor;
+                                            &:last-child{
+                                                padding-left: 8px;
+                                                color: $brandColor;
+                                                text-decoration: line-through;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .item-nums__box{
+                                padding-top: 10px;
+                                >i{
+                                    color: #4ec791;
+                                }
+                                >span{
+                                    padding-left: 5px;
+                                    font-size: 10px;
+                                    color: $brandColor;
+                                }
+                            }
+                            .item-icon__box{
+                                display: flex;
+                                justify-content: flex-end;
+                                align-items: center;
+                                .item-icon{
+                                    padding: 15px;
+                                    border: 0;
+                                    background-color: #fff;
+                                    @include easing3;
+                                    &:last-child:hover{
+                                        background-color: $greenColor;
+                                    }
+                                    img{
+                                        width: 25px;
+                                        height: 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
