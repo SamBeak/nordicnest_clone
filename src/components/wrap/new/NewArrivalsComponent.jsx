@@ -4,6 +4,16 @@ import Section17Component from '../home/Section17Component';
 import Section1Component from '../home/Section1Component';
 
 export default function NewArrivalsComponent() {
+
+    // 판매가 콤마
+    const commaPrice=(price)=>{
+        let value = price.toString();
+        const regExp = /(^\d+)(\d{3})/g;
+        while( regExp.test(value) ){
+            return  value.replace(regExp, '$1,$2');
+        }        
+    };
+
   return (
     <div id="newArrivals">
         <Section1Component />
