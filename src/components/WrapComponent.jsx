@@ -18,8 +18,30 @@ import CustomerPrivacyPolicy from './wrap/cs/CustomerPrivacyPolicy'
 import CustomerCookies from './wrap/cs/CustomerCookies'
 import CustomerFaq from './wrap/cs/CustomerFaq'
 import NewArrivalsComponent from './wrap/new/NewArrivalsComponent'
+import SignModalComponent from './wrap/user/SignModalComponent'
 
 export default function WrapComponent() {
+
+  // Sign State
+  const [signModal, setSignModal] = React.useState({
+    isSign: false,
+    signModalMsg: ''
+  });
+
+  // MODAL OPEN
+  const openSignModal = (msg) => {
+    setSignModal({
+      ...signModal,
+      isSign: true,
+      signModalMsg: msg
+    });
+  };
+
+  // MODAL CLOSE
+  const closeSignModal = () => {
+    setSignModal(false);
+  };
+
   return (
     <div id="wrap">
       <OnTopComponent />
@@ -44,6 +66,12 @@ export default function WrapComponent() {
             <Route path='/faq' element={<CustomerFaq />} />
           </Route>
         </Routes>
+        {/*MODAL*/}
+        {
+          signModal.isSign && (
+            <SignModalComponent closeSignModal={closeSignModal} signModalMsg={signModal.signModalMsg} />
+          )
+        }
       </BrowserRouter>
 
       <FooterComponent />
