@@ -17,7 +17,7 @@ export default function Section2Component() {
                         </div>
                     </div>
                     <div className="content">
-                        <img src="./images/pages/section2/main_img1.jpg" alt="피크닉 사진" />
+                        <img src="./images/pages/section2/main_img1.jpg" alt="피크닉 사진" loading='lazy'/>
                     </div>
                 </div>
             </div>

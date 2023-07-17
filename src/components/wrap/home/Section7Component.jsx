@@ -6,7 +6,7 @@ export default function Section7Component() {
         <div className="container">
             <a href="!#">
                 <div className="content">
-                    <img src="./images/pages/section7/main_img01.webp" alt="스칸디리빙 조명" />
+                    <img src="./images/pages/section7/main_img01.webp" alt="스칸디리빙 조명" loading='lazy' />
                     <div className="inner-text__box">
                         <p className='inner-text__text'>
                             <span>실패없는 화이트&우드 조합 (~6/18 일)</span>

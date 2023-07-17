@@ -44,7 +44,7 @@ export default function Section19Component() {
                         state.feed.map((item, idx) => {
                             if(idx < 12 * cnt){
                                 return(
-                                    <li key={idx} className="slide__content"><a href="!#"><img src={item.imgSrc} alt="유저 SNS피드 이미지" /></a></li>
+                                    <li key={idx} className="slide__content"><a href="!#"><img src={item.imgSrc} alt="유저 SNS피드 이미지" loading='lazy' /></a></li>
                                 )
                             }
                             else{

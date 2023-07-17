@@ -6,7 +6,7 @@ export default function Section14Component() {
         <div className="container">
             <a href="!#">
                 <div className="content">
-                    <img src="./images/pages/section14/sec14_img01.jpg" alt="인기 신상품 포스터사진" />
+                    <img src="./images/pages/section14/sec14_img01.jpg" alt="인기 신상품 포스터사진" loading='lazy' />
                     <div className="inner-text__box">
                         <p className='inner-text__text'>
                             <span>매주 업데이트 되는</span>

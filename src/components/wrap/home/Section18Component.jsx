@@ -6,7 +6,7 @@ export default function Section18Component() {
         <div className="container">
             <a href="!#">
                 <div className="content">
-                    <img src="./images/pages/section18/sec18_img01.jpg" alt="2023년도 유행할 트렌드 포스터" />
+                    <img src="./images/pages/section18/sec18_img01.jpg" alt="2023년도 유행할 트렌드 포스터" loading='lazy' />
                     <div className="inner-text__box">
                         <p className='inner-text__text'>
                             <span>올해 유행할 트렌드 TOP 4</span>

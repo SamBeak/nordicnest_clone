@@ -6,7 +6,7 @@ export default function Section9Component() {
         <div className="container">
             <a href="!#">
                 <div className="content">
-                    <img src="./images/pages/section9/sec9_img01.webp" alt="6월기획전 이벤트사진" />
+                    <img src="./images/pages/section9/sec9_img01.webp" alt="6월기획전 이벤트사진" loading='lazy' />
                     <div className="inner-text__box">
                         <p className='inner-text__text'>
                             <span>여름에 잘 어울리는 브랜드 모음</span>

@@ -94,7 +94,7 @@ export default function Section8Component() {
                                         </div>
                                         <div className='item-img__box'>
                                             <a href="!#">
-                                                <img src={item.imgSrc} alt={item.brand} />
+                                                <img src={item.imgSrc} alt={item.brand} loading="lazy" />
                                                 <div className='item-brand__box'>{item.brand} <br /><span>{item.product}</span></div>
                                                 <div className='item-price__box'><span>￦{commaPrice(item.salePrice)}</span><span>￦{commaPrice(item.price)}</span></div>
                                             </a>

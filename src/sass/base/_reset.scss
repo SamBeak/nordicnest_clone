@@ -22,7 +22,9 @@
     font-size: 12px;
     line-height: 1.5;
     background: #fff;
+    @include easing3;
   }
+
   
   ul {
     list-style: none;

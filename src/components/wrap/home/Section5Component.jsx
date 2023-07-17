@@ -6,7 +6,7 @@ export default function Section5Component() {
             <div className="container">
                 <a href="!#">
                     <div className="content">
-                        <img src="./images/pages/section5/sec5_img01.jpg" alt="테이블웨어 사진" />
+                        <img src="./images/pages/section5/sec5_img01.jpg" alt="테이블웨어 사진" loading='lazy'/>
                         <div className="sales-text__box">
                             <p className='sales-text__text'>
                                 <span>여름의 청량함을 닮은</span>

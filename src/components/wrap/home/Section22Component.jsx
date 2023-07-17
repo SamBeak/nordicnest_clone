@@ -6,16 +6,16 @@ export default function Section22Component() {
         <div className="container">
             <div className="content">
                 <a href="!#">
-                    <img src="./images/pages/section22/sec22_img01.png" alt="쇼핑 지원금 안내" />
+                    <img src="./images/pages/section22/sec22_img01.png" alt="쇼핑 지원금 안내" loading='lazy' />
                 </a>
                 <a href="!#">
-                    <img src="./images/pages/section22/sec22_img02.png" alt="카톡 채널 추가 할인 안내" />
+                    <img src="./images/pages/section22/sec22_img02.png" alt="카톡 채널 추가 할인 안내" loading='lazy' />
                 </a>
                 <a href="!#">
-                    <img src="./images/pages/section22/sec22_img03.png" alt="홈페이지 기능 및 회원가입 안내" />
+                    <img src="./images/pages/section22/sec22_img03.png" alt="홈페이지 기능 및 회원가입 안내" loading='lazy' />
                 </a>
                 <a href="!#">
-                    <img src="./images/pages/section22/sec22_img04.png" alt="노르딕네스트 첫 구매 가이드" />
+                    <img src="./images/pages/section22/sec22_img04.png" alt="노르딕네스트 첫 구매 가이드" loading='lazy' />
                 </a>
             </div>
             <div className="title">

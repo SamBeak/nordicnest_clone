@@ -113,7 +113,7 @@ export default function Section17Component() {
                                         </div>
                                         <div className='item-img__box'>
                                             <a href="!#">
-                                                <img src={item.imgSrc} alt={item.brand} />
+                                                <img src={item.imgSrc} alt={item.brand} loading="lazy" />
                                                 <div className='item-brand__box'>{item.brand} <br /><span>{item.product}</span></div>
                                                 <div className='item-price__box'><span className={item.salePrice === '' ? 'on' : ''}>￦{item.salePrice !== '' ? commaPrice(item.salePrice) : commaPrice(item.price) }</span><span>{item.salePrice === '' ? '' : commaPrice(item.price)}</span></div>
                                             </a>

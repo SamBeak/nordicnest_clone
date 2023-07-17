@@ -42,7 +42,7 @@ export default function Section13Component() {
             </div>
         </div>
         <div className="bridge__box">
-            <img src="./images/bird_on_branch_desktop_left.webp" alt="가지 위의 새" />
+            <img src="./images/bird_on_branch_desktop_left.webp" alt="가지 위의 새" loading='lazy' />
         </div>
     </section>
   )

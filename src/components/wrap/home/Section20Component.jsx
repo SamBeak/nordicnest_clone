@@ -6,7 +6,7 @@ export default function Section20Component() {
         <div className="container">
                 <div className="content">
                     <a href="!#">
-                        <img src="./images/pages/section20/sec20_img01.png" alt="공간별 조명 추천 포스터" />
+                        <img src="./images/pages/section20/sec20_img01.png" alt="공간별 조명 추천 포스터" loading='lazy' />
                         <div className="inner-text__box">
                             <p className='inner-text__text'>
                                 <span>Lighting by Space</span>

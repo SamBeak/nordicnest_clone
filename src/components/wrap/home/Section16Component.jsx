@@ -6,7 +6,7 @@ export default function Section16Component() {
         <div className="container">
             <a href="!#">
                 <div className="content">
-                    <img src="./images/pages/section16/sec16_img01.webp" alt="오토 코펜하겐 사진" />
+                    <img src="./images/pages/section16/sec16_img01.webp" alt="오토 코펜하겐 사진" loading='lazy' />
                     <div className="sales-text__box">
                         <p className='sales-text__text'>
                             <span>메누 & 바이라센의 새 이름</span>

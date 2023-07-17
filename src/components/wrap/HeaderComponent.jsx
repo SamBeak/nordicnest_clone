@@ -33,7 +33,7 @@ export default function HeaderComponent() {
     .catch((err) => {
       console.log(err);
     });
-  }, []);
+  }, [state]);
   
   // 검색창 변화 이벤트
   const onChangeSearching =(e) => {
@@ -83,6 +83,22 @@ export default function HeaderComponent() {
       setIsSignin(true);
     }
   };
+
+  // 로고 클릭 이벤트
+  const onClickLogo = (e) => {
+    e.preventDefault();
+    // go top
+    if(window.location.pathname !== '/'){
+      window.location.href = '/';
+    }
+    else{
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  };
   
 
   
@@ -98,7 +114,7 @@ export default function HeaderComponent() {
           </div>
           <div className="right-box">
             <div className="logo__box">
-              <Link to="/">
+              <Link to="/" onClick={onClickLogo}>
                 <img src="./images/header/logo.svg" alt="브랜드 로고" />
               </Link>
             </div>
