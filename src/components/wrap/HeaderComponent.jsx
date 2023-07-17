@@ -89,7 +89,7 @@ export default function HeaderComponent() {
     e.preventDefault();
     // go top
     if(window.location.pathname !== '/'){
-      window.location.href = '/';
+      window.location.pathname = '/';
     }
     else{
       window.scrollTo({
